@@ -1,0 +1,43 @@
+/* chrome styles override */
+:root {
+    --native-dark-visited-link-color:white;
+}
+/*  */
+body {
+    background-color: #00023A;
+    font-family: "Inter", sans-serif;
+    font-size: 36px;
+    font-weight: 300;
+}
+
+/* nav bar */
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px 10px;
+    padding: 30px 0 30px 40px;
+}
+
+#logo {
+    width: 1.75em;
+    height: 2em;
+}
+
+.nav-elements {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav-elements div{
+    width: 6em;
+    height: 2em;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.nav-elements div a {
+    text-decoration: none;
+    color: white;
+}

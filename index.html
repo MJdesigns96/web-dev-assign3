@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
+
+    <title>Marcus Jeong - Portfolio</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./scripts.js"></script>
+</head>
+<body>
+    <!-- nav bar at top with links to different secitons of the page, will later be turned into routing the user to different parts of the site  -->
+    <nav>
+        <img src="./images/Logo.png" id="logo" alt="logo image">
+        <div class="nav-elements">
+            <div><a href="#">projects</a></div>
+            <div><a href="#">about me</a></div>
+            <div><a href="#">contact</a></div>
+        </div>
+    </nav>
+
+        <!-- Above the fold section -->
+        <div class="welcome-message">
+            <h1 class="welcome-heading">Marcus Jeong</h1>
+            <p>I’m a front end developer based in Toronto, Ontario Canada.</p>
+            <p>I’m looking to make web pages and apps that are beautiful as well as functional. 🤓</p>
+        </div>
+        <div class="bottom-fold">
+            <div class="above-fold-section">
+                <h4>Currently Working on:</h4>
+                <p>Web Development @ Humber</p>
+            </div>
+            <div class="above-fold-section">
+                <h4>Fueled by:</h4>
+                <p>Good designs and Ramen</p>
+            </div>
+        </div>
+
+        <!-- About me -->
+        <div id="About-me">
+            <div class="left-side">
+            <h1>About Me:</h1>  
+            <p>Hi there 👋,</p>
+            <p>
+                I’m Marcus and I’ve been coding for the past few years
+                 focusing on front end development and have some experience 
+                 with Product design.
+            </p>
+            <p>
+                Outside of work i’m a big fan of exercise, cooking, music, dogs, and most things nerdy.
+            </p>
+            <a href="#">Read More about me...</a>
+            </div>
+            <div class="right_side">
+                <img src="./images/pasta.jpg" alt="picture of penne alla vodka pasta">
+                <img src="./images/golf.jpg" alt="picture of me golfing">
+                <img src="./images/doggo.JPG" alt="picture of a shetland sheepdog">
+            </div>
+        </div>
+
+        <!-- Project Cards -->
+        <div class="project-carousel">
+            <div class="card">
+                <img class="card-image">
+                <h3>Uber</h3>
+                <p>A study on user habits and ways to optimize the app for non-mobile us...</p>
+            </div>
+            <div class="card">
+                <img class="card-image">
+                <h3>Doordash</h3>
+                <p>Streamlining the user experience during the checkout process by cr...</p>
+            </div>
+            <div class="card">
+                <img class="card-image">
+                <h3>Mockup Challenge</h3>
+                <p>A challenge on creating Figma components and finding the best....</p>
+            </div>
+        </div>
+
+        <!-- Contact section -->
+        <div class="contact-me">
+            <h1>Contact me:</h1>
+            <p>Want to chat? I happy to answer any questions about my work or just my everyday life.</p>
+            <p>Feel free to fill out the form below and message me!</p>
+            <form id="contact-form">
+                <input type="text" name="message" id="form-message" placeholder="Write your message here. 😁">
+                <input type="text" name="email" id="form-email" placeholder="Email:">
+                <input type="submit" name="submit" value="Send">
+            </form> 
+        </div>
+
+        <!-- footer -->
+        <footer>
+            <p>copyright © Marcus Jeong 2024</p>
+            <a href="#">projects</a>
+            <a href="#">about me</a>
+            <a href="#">contact</a>
+        </footer>
+</body>
+</html>
