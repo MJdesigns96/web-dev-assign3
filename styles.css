@@ -127,10 +127,11 @@ margin: 5% 10%;
 }
 
 /* project cards */
-.project-carousel {
+.project-carousel{
     display: flex;
     flex-direction: row;
     margin: 100px 0;
+    transition: box-shadow 0.3s ease;
 }
 
 .card {
@@ -139,12 +140,42 @@ margin: 5% 10%;
     flex-direction: column;
     margin: 0 10px;
     background-color: #000572;
-    border-radius: 20px;
+    border-radius: 20px;  
+}
+
+.card img:hover {
+    box-shadow: none;
+}
+
+.card h3:hover {
+    box-shadow: none;
+}
+.card p:hover {
+    box-shadow: none;
+}
+
+.card-image {
+    height: 800px;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.card  h3 {
+    color: #FFF;
+    font-family: "Cormorant Upright";
+    font-weight: 300;
+    margin: 10px 20px;
+    font-size: 0.89em;
+}
+
+.card  p {
+    margin: 0 20px 2em 20px;
+    font-size: 0.66em;
+}
+
+.project-carousel :hover {
     box-shadow: 0px 4px 4px 0px rgba(255, 255, 255, 0.13), 0px 4px 4px 0px rgba(255, 255, 255, 0.25);
 }
 
-.card img {
-    max-height:800px;
-    border-radius: 20px 20px 0px 0px;
-    object-fit: cover;
-}
+/*  */
