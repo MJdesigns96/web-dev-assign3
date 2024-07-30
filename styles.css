@@ -115,8 +115,26 @@ margin: 5% 10%;
 }
 
 #about-me .right-side {
+    width: 40%;
     margin: 100px 10% 3em 5%;
+    position: relative;
+    top: 0;
+    left: 0; 
 }
+
+#about-me-img-1 {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-bottom: 100px; 
+}
+
+#about-me-img-2 {
+    position: absolute;
+    top: 7em;
+    left: 6em; 
+}
+
 
 #about-me .right-side img {
     width: 10em;
@@ -126,16 +144,13 @@ margin: 5% 10%;
     object-fit: cover;
 }
 
-#about-me-img {
-    margin-bottom: 100px;
-}
-
 /* project cards */
 .project-carousel{
+    width:100%;
     display: flex;
     flex-direction: row;
     margin: 100px 0;
-    transition: box-shadow 0.3s ease;
+    overflow-x: auto;
 }
 
 .card {
@@ -145,17 +160,6 @@ margin: 5% 10%;
     margin: 0 10px;
     background-color: #000572;
     border-radius: 20px;  
-}
-
-.card img:hover {
-    box-shadow: none;
-}
-
-.card h3:hover {
-    box-shadow: none;
-}
-.card p:hover {
-    box-shadow: none;
 }
 
 .card-image {
@@ -176,10 +180,6 @@ margin: 5% 10%;
 .card  p {
     margin: 0 20px 2em 20px;
     font-size: 0.66em;
-}
-
-.project-carousel :hover {
-    box-shadow: 0px 4px 4px 0px rgba(255, 255, 255, 0.13), 0px 4px 4px 0px rgba(255, 255, 255, 0.25);
 }
 
 /* contact section */
@@ -293,6 +293,8 @@ footer p {
     /* about me */
     #about-me {
         flex-direction: column;
+        width: 100%;
+        overflow-x: hidden;
     }
     .left-side {
         order: 2;
@@ -302,21 +304,36 @@ footer p {
     }
 
     #about-me .right-side {
-        margin: 10% 10%;
+        width:100%;
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        margin: auto;
     }
 
     #about-me .right-side img {
-        flex-direction: row;
-        width: 80vw;
+        width: 80%;
         height: auto;
-    }
-    .right-side img:not(:nth-child(3)) {
-        display:none;
+        border: solid 1px #9e9e9e;
     }
 
     #about-me .left-side {
         width: 80vw;
         margin: 0 10% 10% 10%;
+    }
+
+    #about-me-img-1 {
+        margin: 10% 5% 2em 10%;
+    }
+
+    #about-me-img-2 {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin: 10% 5% 2em 0;
+    }
+    #about-me-img-3 {
+        margin: 10% 10% 2em 0;
     }
 
     /* projects */
