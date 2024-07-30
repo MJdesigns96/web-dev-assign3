@@ -178,4 +178,79 @@ margin: 5% 10%;
     box-shadow: 0px 4px 4px 0px rgba(255, 255, 255, 0.13), 0px 4px 4px 0px rgba(255, 255, 255, 0.25);
 }
 
-/*  */
+/* contact section */
+#contact-me {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 80px 10%;
+    margin-bottom: 80px;
+}
+
+#contact-me h1 {
+    color: #00023A;
+    text-shadow: 2px 4px 10px rgba(255, 255, 255, 0.13), 2px 4px 10px rgba(255, 255, 255, 0.25);
+    font-family: "Cormorant Upright";
+    font-size: 2.67em;
+    font-weight: 400;
+}
+
+#contact-me p {
+    color: #00023A;
+    font-family: Inter;
+    font-weight: 300;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#form-message {
+    font-size: 1em;
+    margin: 40px 0;
+    width: 100%;
+    padding-bottom: 4em;
+}
+
+.email-submit {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+}
+
+#form-email {
+    padding-right: 20%;
+    font-size: 1em;
+    margin-right: 4em;
+}
+
+#email-submit {
+    padding:0 4em 0 4em;
+    font-size: 1em;
+    color: #fff;
+    background-color: #000572;
+    border: 1px solid #acacac;
+    border-radius: 10px;
+}
+
+/* footer */
+footer {
+    display: flex;
+    flex-direction: row;
+    font-size: 0.5em;
+    border-top: 1px solid #FFF;
+    margin: 0 10%;
+    justify-content: space-between;
+}
+footer p {
+    margin-top: 2em;
+}
+
+.footer-links {
+    margin-top: 2em;
+}
+.footer-links a{
+    color: #fff;
+    text-decoration: none;
+    padding-left: 2em;
+}
